@@ -1,1 +1,4 @@
 target/
+
+# Generted code
+src/bindings.rs
