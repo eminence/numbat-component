@@ -1,0 +1,24 @@
+package component:numbat-component;
+
+interface numbat {
+    //resource markup {
+    //    to-string: func() -> string;
+    //    to-irc-string: func() -> string;
+    //}
+
+    //record output {
+    //    statements: list<markup>,
+    //    output: markup,
+    //}
+
+    resource ctx {
+        constructor();
+        eval: func(input: string) -> result<string, string>;
+    }
+    // format-for-irc: func(input: markup) -> string;
+
+}
+
+world example {
+    export numbat;
+}
